@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="dashboard.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">User Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recentUsers">Recently Joined</a></li>
+          <li class="nav-item"><a class="nav-link" href="#userListSection">Users List</a></li>
+        </ul>
+        <img src="icons/profile.png" alt="Profile" class="rounded-circle ms-3 profile-pic" />
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2>Total Users</h2>
+        <h1 id="totalUsers" class="display-3 fw-bold text-primary">0</h1>
+      </div>
+    </div>
+
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card shadow p-3">
+          <h4 class="text-center">Users Created Per Day</h4>
+          <canvas id="usersPerDay"></canvas>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow p-3">
+          <h4 class="text-center">Avatar Distribution</h4>
+          <canvas id="avatarDistribution"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recently Joined -->
+    <div class="row mt-5">
+      <h4>Recently Joined Users</h4>
+      <ul id="recentUsers" class="list-group"></ul>
+    </div>
+
+
+    <div class="row mt-5" id="userListSection">
+      <h4>User List</h4>
+      <input id="search" type="text" class="form-control mb-3" placeholder="Search by name/email" />
+      <table class="table table-bordered shadow">
+        <thead class="table-dark">
+          <tr>
+            <th onclick="sortUsers('name')">Name ⬍</th>
+            <th onclick="sortUsers('createdAt')">Created At ⬍</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+      </table>
+      <nav><ul id="pagination" class="pagination"></ul></nav>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 User Dashboard | Built by Jigar Barad</p>
+      <p>
+        <a href="https://github.com/jigarbarad" target="_blank"><img src="icons/github.png" alt="GitHub" class="footer-icon"></a>
+        <a href="https://www.linkedin.com/in/jigarbarad09" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn" class="footer-icon"></a>
+        <a href="mailto:jigarbarad1586@gmail.com"><img src="icons/email.png" alt="Email" class="footer-icon"></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

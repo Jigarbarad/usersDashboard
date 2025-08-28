@@ -56,3 +56,17 @@ It fetches user data from a mock API and displays it in a structured, interactiv
    git clone https://github.com/your-username/zymr-assignment.git
 2. Navigate into the project folder:
     cd zymr-assignment
+
+3. Open index.html in your browser.
+
+  🌐 Live Demo
+
+  Once deployed, add your link here:
+  Live Demo
+
+  🤝 Contributing
+
+  Contributions are welcome!
+  Fork this repository
+  Create a feature branch
+  Submit a Pull Request

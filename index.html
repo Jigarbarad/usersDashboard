@@ -43,16 +43,20 @@
 
 
     <div class="row mb-4">
-      <div class="col-md-6">
-        <div class="card shadow p-3">
-          <h4 class="text-center">Users Created Per Day</h4>
-          <canvas id="usersPerDay"></canvas>
+      <div class="col-md-6 d-flex align-items-stretch">
+        <div class="card shadow p-3 w-100 h-100 d-flex flex-column justify-content-center">
+          <h4 class="text-center mb-3">Users Created Per Day</h4>
+          <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <canvas id="usersPerDay" style="max-height:300px;"></canvas>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card shadow p-3">
-          <h4 class="text-center">Avatar Distribution</h4>
-          <canvas id="avatarDistribution"></canvas>
+      <div class="col-md-6 d-flex align-items-stretch">
+        <div class="card shadow p-3 w-100 h-100 d-flex flex-column justify-content-center">
+          <h4 class="text-center mb-3">Avatar Distribution</h4>
+          <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <canvas id="avatarDistribution" style="max-height:300px;"></canvas>
+          </div>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ It fetches user data from a mock API and displays it in a structured, interactiv
    - View interactive charts  
 
 ## 🖼️ Preview
-![Dashboard Preview](./dashboard.png)
+https://jigarbarad.github.io/usersDashboard/
 
 ## 🛠️ Technologies Used
 - HTML5 – Structure  
